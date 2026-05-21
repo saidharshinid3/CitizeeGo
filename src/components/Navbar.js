@@ -20,7 +20,9 @@ const Navbar = () => {
       color: 'var(--white)',
       padding: window.innerWidth <= 768 ? '0.7rem' : '1rem 2rem',
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: window.innerWidth <= 768 ? 'center' : 'space-between',
+flexWrap: 'wrap',
+gap: '10px',
       alignItems: 'center',
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
       position: 'sticky',
@@ -31,9 +33,9 @@ const Navbar = () => {
         <img
   src="/logo192.png"
   alt="Logo"
-  style={{ height: '30px' }}
+  style={{height: window.innerWidth <= 768 ? '24px' : '30px'}}
 />
-        <Link to="/" style={{ color: 'var(--white)', fontSize: window.innerWidth <= 768 ? '1rem' : '1.5rem', fontWeight: 'bold' }}>
+        <Link to="/" style={{ color: 'var(--white)', fontSize: window.innerWidth <= 768 ? '0.9rem' : '1.5rem', fontWeight: 'bold' }}>
           {t('app.title')}
         </Link>
       </div>
