@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav style={{
       backgroundColor: 'var(--primary-color)',
       color: 'var(--white)',
-      padding: '1rem 2rem',
+      padding: window.innerWidth <= 768 ? '0.7rem' : '1rem 2rem',
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -29,12 +29,12 @@ const Navbar = () => {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img src="/logo192.png" alt="Logo" style={{ height: '30px', filter: 'brightness(0) invert(1)' }} onError={(e) => e.target.style.display = 'none'} />
-        <Link to="/" style={{ color: 'var(--white)', fontSize: '1.5rem', fontWeight: 'bold' }}>
+        <Link to="/" style={{ color: 'var(--white)', fontSize: window.innerWidth <= 768 ? '1rem' : '1.5rem', fontWeight: 'bold' }}>
           {t('app.title')}
         </Link>
       </div>
       
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: window.innerWidth <= 768 ? '0.5rem' : '1.5rem'}}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Globe size={18} />
           <select 
