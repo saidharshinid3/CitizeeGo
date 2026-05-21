@@ -274,9 +274,25 @@ const CitizenDashboard = () => {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+      <div
+  style={{
+    display: 'flex',
+    gap: '2rem',
+    flexWrap: 'wrap',
+    flexDirection: window.innerWidth <= 768 ? 'column' : 'row'
+  }}
+>
         {/* COMPLAINT FORM */}
-        <div className={`card ${priority === 'Emergency' ? 'emergency-border' : ''}`} style={{ flex: '1 1 350px', alignSelf: 'flex-start' }}>
+        <div
+  className={`card ${priority === 'Emergency' ? 'emergency-border' : ''}`}
+  style={{
+    flex: window.innerWidth <= 768
+      ? '1 1 100%'
+      : '1 1 350px',
+    width: '100%',
+    alignSelf: 'flex-start'
+  }}
+>
           <h2 className="card-title" style={{ color: priority === 'Emergency' ? 'var(--danger)' : 'var(--primary-color)' }}>
             {t('complaint.submit_title')}
           </h2>
@@ -351,7 +367,15 @@ const CitizenDashboard = () => {
         </div>
 
         {/* COMPLAINT TABLE */}
-        <div className="card" style={{ flex: '2 1 500px' }}>
+        <div
+  className="card"
+  style={{
+    flex: window.innerWidth <= 768
+      ? '1 1 100%'
+      : '2 1 500px',
+    width: '100%'
+  }}
+>
           <h2 className="card-title">{t('dash.my_complaints')}</h2>
           {loading ? (
             <div className="spinner" style={{ margin: '2rem auto' }}></div>
