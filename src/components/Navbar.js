@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav style={{
+    <nav className="navbar" style={{
       backgroundColor: 'var(--primary-color)',
       color: 'var(--white)',
       padding: window.innerWidth <= 768 ? '0.7rem' : '1rem 2rem',
@@ -29,7 +29,12 @@ gap: '10px',
       top: 0,
       zIndex: 1000
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <div className="navbar-right" style={{
+  display: 'flex',
+  alignItems: 'center',
+  gap: '1rem',
+  flexWrap: 'wrap'
+}}>
         <img
   src="/logo192.png"
   alt="Logo"
