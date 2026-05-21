@@ -69,13 +69,14 @@ const Register = () => {
         }}
       >
         <div style={{ position: 'relative', zIndex: 1 }}>
-          <Building2
-            size={64}
-            style={{
-              marginBottom: '2rem',
-              color: 'var(--accent-color)'
-            }}
-          />
+          <img
+  src="/CitizeeGo1.png"
+  alt="CitizeeGo Logo"
+  style={{
+    width: '80px',
+    marginBottom: '2rem'
+  }}
+/>
 
           <h1
             style={{
