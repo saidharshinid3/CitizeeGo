@@ -20,8 +20,7 @@ const Navbar = () => {
       color: 'var(--white)',
       padding: window.innerWidth <= 768 ? '0.7rem' : '1rem 2rem',
       display: 'flex',
-      justifyContent: window.innerWidth <= 768 ? 'center' : 'space-between',
-flexWrap: 'wrap',
+      justifyContent: 'space-between',
 gap: '10px',
       alignItems: 'center',
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
@@ -29,13 +28,16 @@ gap: '10px',
       top: 0,
       zIndex: 1000
     }}>
-      <div className="navbar-right" style={{
+
+<div className="navbar-right" style={{
   display: 'flex',
   alignItems: 'center',
   gap: '1rem',
-  flexWrap: 'wrap'
+  flexWrap: 'wrap',
+  width: window.innerWidth <= 768 ? '100%' : 'auto',
+  justifyContent: 'space-between'
 }}>
-        <img
+  <img
   src="/logo192.png"
   alt="Logo"
   style={{height: window.innerWidth <= 768 ? '24px' : '30px'}}
@@ -45,7 +47,14 @@ gap: '10px',
         </Link>
       </div>
       
-      <div style={{ display: 'flex', alignItems: 'center', gap: window.innerWidth <= 768 ? '0.5rem' : '1.5rem'}}>
+      <div style={{
+  display: 'flex',
+  alignItems: 'center',
+  gap: window.innerWidth <= 768 ? '0.5rem' : '1.5rem',
+  flexWrap: 'wrap',
+  width: window.innerWidth <= 768 ? '100%' : 'auto',
+  justifyContent: 'space-between'
+}}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <Globe size={18} />
           <select 
