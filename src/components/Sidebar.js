@@ -52,7 +52,8 @@ const Sidebar = () => {
 
     <aside
       style={{
-        width: window.innerWidth <= 768 ? '70px' : '250px',
+        width: window.innerWidth <= 768 ? '0px' : '250px',
+display: window.innerWidth <= 768 ? 'none' : 'block',
         backgroundColor: 'white',
         borderRight: '1px solid #ddd',
         padding: '1rem'
