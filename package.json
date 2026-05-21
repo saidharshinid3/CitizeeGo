@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -42,7 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-=======
   "name": "citizeego-backend",
   "version": "1.0.0",
   "description": "Backend for CitizeeGo Civic Platform",
@@ -62,6 +60,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
->>>>>>> 0dbf96f7d7fc69edec6a9452408301f31b8e3c04
   }
 }
