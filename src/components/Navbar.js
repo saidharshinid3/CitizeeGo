@@ -28,7 +28,11 @@ const Navbar = () => {
       zIndex: 1000
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <img src="/logo192.png" alt="Logo" style={{ height: '30px', filter: 'brightness(0) invert(1)' }} onError={(e) => e.target.style.display = 'none'} />
+        <img
+  src="/logo192.png"
+  alt="Logo"
+  style={{ height: '30px' }}
+/>
         <Link to="/" style={{ color: 'var(--white)', fontSize: window.innerWidth <= 768 ? '1rem' : '1.5rem', fontWeight: 'bold' }}>
           {t('app.title')}
         </Link>
