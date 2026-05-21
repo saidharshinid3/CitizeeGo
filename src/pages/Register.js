@@ -70,7 +70,7 @@ const Register = () => {
       >
         <div style={{ position: 'relative', zIndex: 1 }}>
           <img
-  src="/CitizeeGo1.png"
+  src="/logo192.png"
   alt="CitizeeGo Logo"
   style={{
     width: '80px',
