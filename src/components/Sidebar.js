@@ -52,7 +52,7 @@ const Sidebar = () => {
 
     <aside
       style={{
-        width: '250px',
+        width: window.innerWidth <= 768 ? '70px' : '250px',
         backgroundColor: 'white',
         borderRight: '1px solid #ddd',
         padding: '1rem'
@@ -76,7 +76,7 @@ const Sidebar = () => {
 
           {link.icon}
 
-          {link.label}
+          {window.innerWidth > 768 && link.label}
 
         </NavLink>
 
