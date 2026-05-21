@@ -298,3 +298,51 @@ tbody tr:hover {
   border-left-color: var(--primary-color);
   animation: spin 1s linear infinite;
 }
+@media (max-width: 768px) {
+
+  .sidebar {
+    width: 60px !important;
+    overflow-x: hidden;
+  }
+
+  .sidebar span,
+  .sidebar h2,
+  .sidebar p {
+    display: none !important;
+  }
+
+  .main-content {
+    margin-left: 60px !important;
+    width: calc(100% - 60px) !important;
+    padding: 10px !important;
+  }
+
+  .navbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px;
+    padding: 10px !important;
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .cards-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .card,
+  .dashboard-card {
+    width: 100% !important;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
