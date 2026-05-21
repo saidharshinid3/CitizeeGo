@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Adjust if backend URL is different
+  baseURL: 'https://citizeego-backend.onrender.com', // Adjust if backend URL is different
 });
 
 // Request interceptor to add the JWT token to headers
